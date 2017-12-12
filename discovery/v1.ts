@@ -164,7 +164,7 @@ class DiscoveryV1 extends GeneratedDiscoveryV1 {
       delete _params.natural_language_query;
     }
     if (_params.return) {
-      _params.return_fields = _params.return.split(',');
+      _params.return_fields = _params.return;
     }
     // passages parameters are now snake case
     Object.keys(_params).forEach(
